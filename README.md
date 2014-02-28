@@ -24,7 +24,9 @@ Now display the data. There are 3 ways to do "depth-first" traversal of a tree: 
 
 Preorder:
 > TimJonyDanKatiePeterAndreaPhilCraigEddie
+
 Inorder:
 > DanJonyPeterKatieAndreaTimCraigPhilEddie
+
 Postorder:
 > DanPeterAndreaKatieJonyCraigEddiePhilTim
