@@ -23,10 +23,10 @@ Now display the data. There are 3 ways to do "depth-first" traversal of a tree: 
 ###Tree Traversal Output:
 
 Preorder:
-> TimJonyDanKatiePeterAndreaPhilCraigEddie
+> Tim Jony Dan Katie Peter Andrea Phil Craig Eddie 
 
 Inorder:
-> DanJonyPeterKatieAndreaTimCraigPhilEddie
+> Dan Jony Peter Katie Andrea Tim Craig Phil Eddie 
 
 Postorder:
-> DanPeterAndreaKatieJonyCraigEddiePhilTim
+> Dan Peter Andrea Katie Jony Craig Eddie Phil Tim 
