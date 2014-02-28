@@ -9,7 +9,7 @@ class Tree
 
   def self.preorder(tree)
     return if tree.nil?
-    print tree.name.to_s + ""
+    print tree.name.to_s + " "
     preorder(tree.left)
     preorder(tree.right)
   end 
@@ -17,7 +17,7 @@ class Tree
   def self.inorder(tree)
     return if tree.nil?
     inorder(tree.left)
-    print tree.name.to_s + ""
+    print tree.name.to_s + " "
     inorder(tree.right)
   end 
 
@@ -25,6 +25,6 @@ class Tree
     return if tree.nil?
     postorder(tree.left)
     postorder(tree.right)
-    print tree.name.to_s + ""
+    print tree.name.to_s + " "
   end 
 end
