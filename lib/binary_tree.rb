@@ -8,20 +8,25 @@ class Tree
   end 
 
   def preorder
-    print name.to_s + " "
-    left.preorder unless left.nil?
-    right.preorder unless right.nil?
+    names = name.to_s + " "
+    names += left.preorder unless left.nil?
+    names += right.preorder unless right.nil?
+    names
   end 
 
   def inorder
-    left.inorder unless left.nil?
-    print name.to_s + " "
-    right.inorder unless right.nil?
+    names = ""
+    names += left.inorder unless left.nil?
+    names += name.to_s + " "
+    names += right.inorder unless right.nil?
+    names
   end 
 
   def postorder
-    left.postorder unless left.nil?
-    right.postorder unless right.nil?
-    print name.to_s + " "
+    names = ""
+    names += left.postorder unless left.nil?
+    names += right.postorder unless right.nil?
+    names += name.to_s + " "
+    names
   end 
 end
