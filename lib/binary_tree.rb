@@ -7,24 +7,21 @@ class Tree
     @right = right
   end 
 
-  def self.preorder(tree)
-    return if tree.nil?
-    print tree.name.to_s + " "
-    preorder(tree.left)
-    preorder(tree.right)
+  def preorder
+    print name.to_s + " "
+    left.preorder unless left.nil?
+    right.preorder unless right.nil?
   end 
 
-  def self.inorder(tree)
-    return if tree.nil?
-    inorder(tree.left)
-    print tree.name.to_s + " "
-    inorder(tree.right)
+  def inorder
+    left.inorder unless left.nil?
+    print name.to_s + " "
+    right.inorder unless right.nil?
   end 
 
-  def self.postorder(tree)
-    return if tree.nil?
-    postorder(tree.left)
-    postorder(tree.right)
-    print tree.name.to_s + " "
+  def postorder
+    left.postorder unless left.nil?
+    right.postorder unless right.nil?
+    print name.to_s + " "
   end 
 end
